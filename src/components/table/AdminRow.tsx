@@ -1,7 +1,8 @@
+import type { Admin } from "../types";
 import AdminCell from "./AdminCell";
 import styles from "./styles";
 
-const AdminRow = ({ admin, monthIndices, hightlightedMonths }: {admin: any; monthIndices: number[]; hightlightedMonths: number[] }) => (
+const AdminRow = ({ admin, monthIndices, hightlightedMonths }: {admin: Admin; monthIndices: number[]; hightlightedMonths: number[] }) => (
     <tr>
         <td className={`${styles.border}  w-[160px] px-4 text-left font-medium`}>
             {admin.adminName}

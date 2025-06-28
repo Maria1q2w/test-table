@@ -1,7 +1,8 @@
+import type { Total } from "../types";
 import styles from "./styles";
 import TotalCell from "./TotalCell";
 
-const TotalRow = ({ total, monthIndices, visibleTotals, hightlightedMonths }: { total: any[]; monthIndices: number[], visibleTotals: any[]; hightlightedMonths: number[] }) => (
+const TotalRow = ({ total, monthIndices, visibleTotals, hightlightedMonths }: { total: Total[]; monthIndices: number[], visibleTotals: Total[]; hightlightedMonths: number[] }) => (
     <tr className="font-semibold h-[80px]">
         <td className={`${styles.titleTd} px-2 w-[200px]`}>Manager</td>
     <td className={`${styles.titleTd} ${styles.size}`}>

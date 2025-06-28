@@ -1,7 +1,8 @@
+import type { Values } from "../types";
 import styles from "./styles";
 import SubCell from "./SubCell";
 
-const TotalCell = ({ plan, fact, isHighlighted }: {plan: any; fact: any; isHighlighted: boolean; }) => (
+const TotalCell = ({ plan, fact, isHighlighted }: {plan: Values; fact: Values; isHighlighted: boolean; }) => (
     <td className={`${styles.td} ${isHighlighted ? styles.text.hightlighted : styles.text.dimmed}`}>
                         <div className={`${styles.size} ${styles.flexCol}`} >
                             <div className={`${styles.tdRow}`}>
